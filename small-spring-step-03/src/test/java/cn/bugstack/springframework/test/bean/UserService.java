@@ -6,6 +6,7 @@ package cn.bugstack.springframework.test.bean;
 public class UserService {
 
     private String name;
+//    private Integer age;
 
     public UserService() {
     }
@@ -13,6 +14,9 @@ public class UserService {
     public UserService(String name) {
         this.name = name;
     }
+//    public UserService(Integer age) {
+//        this.age = age;
+//    }
 
     public void queryUserInfo() {
         System.out.println("查询用户信息：" + name);

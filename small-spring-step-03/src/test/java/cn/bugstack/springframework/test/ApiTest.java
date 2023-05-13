@@ -21,11 +21,11 @@ public class ApiTest {
         // 1.初始化 BeanFactory
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
 
-        // 3. 注入bean
+        // 2. 注入bean
         BeanDefinition beanDefinition = new BeanDefinition(UserService.class);
         beanFactory.registerBeanDefinition("userService", beanDefinition);
 
-        // 4.获取bean
+        // 3.获取bean
         UserService userService = (UserService) beanFactory.getBean("userService", "小傅哥");
         userService.queryUserInfo();
     }
